@@ -4,11 +4,7 @@ PODS:
   - DCOTransparentScroller (0.0.1)
 
 DEPENDENCIES:
-  - DCOAboutWindow (from `git@github.com:DangerCove/DCOAboutWindow.git`)
-
-EXTERNAL SOURCES:
-  DCOAboutWindow:
-    :git: git@github.com:DangerCove/DCOAboutWindow.git
+  - DCOAboutWindow
 
 SPEC CHECKSUMS:
   DCOAboutWindow: 7572a1b98bc92ce69301c645dbde6323bf8612c2
