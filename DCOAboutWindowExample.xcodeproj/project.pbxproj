@@ -19,7 +19,7 @@
 		B54B7D7C189F9BB8003EC0D9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54B7D5B189F9BB7003EC0D9 /* Cocoa.framework */; };
 		B54B7D84189F9BB8003EC0D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B54B7D82189F9BB8003EC0D9 /* InfoPlist.strings */; };
 		B54B7D86189F9BB8003EC0D9 /* DCOAboutWindowExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7D85189F9BB8003EC0D9 /* DCOAboutWindowExampleTests.m */; };
-		B54B7DA0189FA26B003EC0D9 /* Acknowledgements.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B54B7D9E189FA26B003EC0D9 /* Acknowledgements.rtf */; };
+		B54B7DA0189FA26B003EC0D9 /* Acknowledgments.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B54B7D9E189FA26B003EC0D9 /* Acknowledgments.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		B54B7D83189F9BB8003EC0D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B54B7D85189F9BB8003EC0D9 /* DCOAboutWindowExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCOAboutWindowExampleTests.m; sourceTree = "<group>"; };
 		B54B7D95189FA0F4003EC0D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		B54B7D9F189FA26B003EC0D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Acknowledgements.rtf; sourceTree = "<group>"; };
+		B54B7D9F189FA26B003EC0D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Acknowledgments.rtf; sourceTree = "<group>"; };
 		DEA42322DE7D4D049AECC29D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,7 +141,7 @@
 				B54B7D64189F9BB7003EC0D9 /* InfoPlist.strings */,
 				B54B7D67189F9BB7003EC0D9 /* main.m */,
 				B54B7D69189F9BB7003EC0D9 /* DCOAboutWindowExample-Prefix.pch */,
-				B54B7D9E189FA26B003EC0D9 /* Acknowledgements.rtf */,
+				B54B7D9E189FA26B003EC0D9 /* Acknowledgments.rtf */,
 				B54B7D6A189F9BB7003EC0D9 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -247,7 +247,7 @@
 				B54B7D66189F9BB7003EC0D9 /* InfoPlist.strings in Resources */,
 				B54B7D74189F9BB8003EC0D9 /* Images.xcassets in Resources */,
 				B54B7D6C189F9BB7003EC0D9 /* Credits.rtf in Resources */,
-				B54B7DA0189FA26B003EC0D9 /* Acknowledgements.rtf in Resources */,
+				B54B7DA0189FA26B003EC0D9 /* Acknowledgments.rtf in Resources */,
 				B54B7D72189F9BB8003EC0D9 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,12 +356,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		B54B7D9E189FA26B003EC0D9 /* Acknowledgements.rtf */ = {
+		B54B7D9E189FA26B003EC0D9 /* Acknowledgments.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B54B7D9F189FA26B003EC0D9 /* en */,
 			);
-			name = Acknowledgements.rtf;
+			name = Acknowledgments.rtf;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

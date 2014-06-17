@@ -2,7 +2,7 @@
 
 This is an example implementation of [DCOAboutWindow](https://github.com/DangerCove/DCOAboutWindow). `DCOAboutWindow` is a replacement for the standard About dialog. 
 
-It adds the option to open acknowledgements and visit the website by clicking a button.
+It adds the option to open acknowledgments and visit the website by clicking a button.
 
 ![DCOAboutWindow in action](https://raw.github.com/DangerCove/DCOAboutWindow/master/screenshots/DCOAboutWindow.jpg)
 
