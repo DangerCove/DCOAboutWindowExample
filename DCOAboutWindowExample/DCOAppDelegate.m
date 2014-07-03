@@ -38,6 +38,21 @@
     return YES;
 }
 
+#pragma mark - Resizable
+
+- (BOOL)isResizable {
+    return self.aboutWindowController.window.styleMask & NSResizableWindowMask;
+}
+
+- (void)setResizable:(BOOL)resizable {
+    
+    if(self.isResizable) {
+        self.aboutWindowController.window.styleMask &= ~NSResizableWindowMask;
+    } else {
+        self.aboutWindowController.window.styleMask |= NSResizableWindowMask;
+    }
+}
+
 #pragma mark - Interface Methods
 
 - (IBAction)showAboutWindow:(id)sender {

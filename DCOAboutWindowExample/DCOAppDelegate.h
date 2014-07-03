@@ -16,6 +16,9 @@
 /** The main window. */
 @property (assign) IBOutlet NSWindow *window;
 
+/** Returns and sets whether the about window is resiable. */
+@property (nonatomic, assign, getter = isResizable) BOOL resizable;
+
 /**
  *  Show the about window.
  *

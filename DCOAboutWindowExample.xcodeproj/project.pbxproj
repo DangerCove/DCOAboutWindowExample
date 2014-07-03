@@ -20,6 +20,7 @@
 		B54B7D84189F9BB8003EC0D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B54B7D82189F9BB8003EC0D9 /* InfoPlist.strings */; };
 		B54B7D86189F9BB8003EC0D9 /* DCOAboutWindowExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7D85189F9BB8003EC0D9 /* DCOAboutWindowExampleTests.m */; };
 		B54B7DA0189FA26B003EC0D9 /* Acknowledgments.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B54B7D9E189FA26B003EC0D9 /* Acknowledgments.rtf */; };
+		B59CFDF4196557CB009ABD5F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B59CFDF6196557CB009ABD5F /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		B54B7D85189F9BB8003EC0D9 /* DCOAboutWindowExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCOAboutWindowExampleTests.m; sourceTree = "<group>"; };
 		B54B7D95189FA0F4003EC0D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B54B7D9F189FA26B003EC0D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Acknowledgments.rtf; sourceTree = "<group>"; };
+		B59CFDF5196557CB009ABD5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DEA42322DE7D4D049AECC29D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 				B54B7D6D189F9BB7003EC0D9 /* DCOAppDelegate.h */,
 				B54B7D6E189F9BB7003EC0D9 /* DCOAppDelegate.m */,
 				B54B7D70189F9BB8003EC0D9 /* MainMenu.xib */,
+				B59CFDF6196557CB009ABD5F /* Localizable.strings */,
 				B54B7D73189F9BB8003EC0D9 /* Images.xcassets */,
 				B54B7D62189F9BB7003EC0D9 /* Supporting Files */,
 			);
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B54B7D66189F9BB7003EC0D9 /* InfoPlist.strings in Resources */,
+				B59CFDF4196557CB009ABD5F /* Localizable.strings in Resources */,
 				B54B7D74189F9BB8003EC0D9 /* Images.xcassets in Resources */,
 				B54B7D6C189F9BB7003EC0D9 /* Credits.rtf in Resources */,
 				B54B7DA0189FA26B003EC0D9 /* Acknowledgments.rtf in Resources */,
@@ -362,6 +366,14 @@
 				B54B7D9F189FA26B003EC0D9 /* en */,
 			);
 			name = Acknowledgments.rtf;
+			sourceTree = "<group>";
+		};
+		B59CFDF6196557CB009ABD5F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B59CFDF5196557CB009ABD5F /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

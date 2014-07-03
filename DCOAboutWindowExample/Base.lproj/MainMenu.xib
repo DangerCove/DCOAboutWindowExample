@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -650,7 +650,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
             <value key="minSize" type="size" width="480" height="360"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
@@ -667,9 +667,22 @@
                             <action selector="showAboutWindow:" target="494" id="9wq-hf-b16"/>
                         </connections>
                     </button>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="lnV-xn-qbb">
+                        <rect key="frame" x="199" y="134" width="82" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Resizable" bezelStyle="regularSquare" imagePosition="left" inset="2" id="aKj-9B-mhJ">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="494" name="value" keyPath="self.resizable" id="zsO-QU-s4G"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="centerX" secondItem="XSk-n2-v0V" secondAttribute="centerX" constant="-0.5" id="CRJ-nZ-Fma"/>
+                    <constraint firstItem="XSk-n2-v0V" firstAttribute="bottom" secondItem="lnV-xn-qbb" secondAttribute="bottom" constant="-34" id="eIi-HE-cLQ"/>
+                    <constraint firstItem="XSk-n2-v0V" firstAttribute="centerX" secondItem="lnV-xn-qbb" secondAttribute="centerX" constant="0.5" id="rDA-8n-Wjd"/>
                     <constraint firstAttribute="centerY" secondItem="XSk-n2-v0V" secondAttribute="centerY" constant="0.5" id="zQS-0D-SUd"/>
                 </constraints>
             </view>
