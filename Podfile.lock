@@ -1,13 +1,13 @@
 PODS:
-  - DCOAboutWindow (0.1.0):
+  - DCOAboutWindow (0.2.0):
     - DCOTransparentScroller
   - DCOTransparentScroller (0.0.1)
 
 DEPENDENCIES:
-  - DCOAboutWindow (~> 0.1)
+  - DCOAboutWindow (~> 0.2)
 
 SPEC CHECKSUMS:
-  DCOAboutWindow: 467dbed5fa78dbab5905b603e6f6ff83566578e8
+  DCOAboutWindow: 47430680190584c3baf52d33441712814fd5b955
   DCOTransparentScroller: bafe06de9a46d03a4fb6ea6690bf547030d42135
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.34.4

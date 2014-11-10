@@ -53,6 +53,12 @@
     }
 }
 
+- (void)setUseTextView:(BOOL)useTextView {
+    
+    _useTextView = useTextView;
+    self.aboutWindowController.useTextViewForAcknowledgments = useTextView;
+}
+
 #pragma mark - Interface Methods
 
 - (IBAction)showAboutWindow:(id)sender {

@@ -8,4 +8,5 @@
 
 "Version %@ (Build %@)" = "v%@ (%@)";
 "Visit the %@ Website" = "Visit %@'s Website";
-"Acknowledgments" = "Acknowledgements";
+"Acknowledgments" = "Acknowledgments";
+"Credits" = "Credits";

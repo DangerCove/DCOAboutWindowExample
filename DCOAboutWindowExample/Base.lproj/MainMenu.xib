@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -10,7 +11,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <menu title="AMainMenu" systemMenu="main" id="29">
             <items>
                 <menuItem title="DCOAboutWindowExample" id="56">
@@ -650,15 +651,14 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <value key="minSize" type="size" width="480" height="360"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XSk-n2-v0V">
-                        <rect key="frame" x="144" y="163" width="193" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <rect key="frame" x="144" y="193" width="193" height="32"/>
                         <buttonCell key="cell" type="push" title="Show the About Window" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XaR-gs-eVY">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -668,8 +668,7 @@
                         </connections>
                     </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="lnV-xn-qbb">
-                        <rect key="frame" x="199" y="134" width="82" height="18"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <rect key="frame" x="199" y="164" width="82" height="18"/>
                         <buttonCell key="cell" type="check" title="Resizable" bezelStyle="regularSquare" imagePosition="left" inset="2" id="aKj-9B-mhJ">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -678,12 +677,24 @@
                             <binding destination="494" name="value" keyPath="self.resizable" id="zsO-QU-s4G"/>
                         </connections>
                     </button>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="6b7-Oc-yfy">
+                        <rect key="frame" x="97" y="134" width="285" height="18"/>
+                        <buttonCell key="cell" type="check" title="Use text view to display acknowledgments" bezelStyle="regularSquare" imagePosition="left" inset="2" id="sgg-ze-U4V">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="494" name="value" keyPath="self.useTextView" id="BpW-B4-agX"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="centerX" secondItem="XSk-n2-v0V" secondAttribute="centerX" constant="-0.5" id="CRJ-nZ-Fma"/>
+                    <constraint firstAttribute="centerX" secondItem="XSk-n2-v0V" secondAttribute="centerX" id="CRJ-nZ-Fma"/>
+                    <constraint firstItem="6b7-Oc-yfy" firstAttribute="top" secondItem="lnV-xn-qbb" secondAttribute="bottom" constant="16" id="FdM-X1-Rxk"/>
+                    <constraint firstItem="lnV-xn-qbb" firstAttribute="centerX" secondItem="6b7-Oc-yfy" secondAttribute="centerX" id="RKj-3o-o2U"/>
                     <constraint firstItem="XSk-n2-v0V" firstAttribute="bottom" secondItem="lnV-xn-qbb" secondAttribute="bottom" constant="-34" id="eIi-HE-cLQ"/>
                     <constraint firstItem="XSk-n2-v0V" firstAttribute="centerX" secondItem="lnV-xn-qbb" secondAttribute="centerX" constant="0.5" id="rDA-8n-Wjd"/>
-                    <constraint firstAttribute="centerY" secondItem="XSk-n2-v0V" secondAttribute="centerY" constant="0.5" id="zQS-0D-SUd"/>
+                    <constraint firstAttribute="centerY" secondItem="XSk-n2-v0V" secondAttribute="centerY" constant="30" id="zQS-0D-SUd"/>
                 </constraints>
             </view>
         </window>

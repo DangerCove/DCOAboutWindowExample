@@ -19,6 +19,9 @@
 /** Returns and sets whether the about window is resiable. */
 @property (nonatomic, assign, getter = isResizable) BOOL resizable;
 
+/** Whether an external editor should be used for to display the acknowledgments. */
+@property (nonatomic, assign) BOOL useTextView;
+
 /**
  *  Show the about window.
  *
